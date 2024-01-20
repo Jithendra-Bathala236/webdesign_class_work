@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Table</title>
+        <style>
+            * {
+                font-family: system-ui;
+            }
+
+            table {
+                border-collapse: collapse;
+                border: 1px solid #000;
+                width: 60%;
+            }
+
+            th,
+            td {
+                padding: 5px 10px;
+                border: 1px solid #000;
+            }
+
+            tbody tr {
+                transition: 0.2s ease-in-out;
+                cursor: pointer;
+            }
+
+            tbody tr:hover {
+                background-color: #eee;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Education Detailes</th>
+                </tr>
+                <tr>
+                    <th>Sr no.</th>
+                    <th>Uni/Board</th>
+                    <th>years of passing</th>
+                    <th>years of expreince</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>SSC</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>HSC</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">3</td>
+                    <td rowspan="2">ISU</td>
+                    <td>Sem I</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Sem II</td>
+                    <td>something</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
