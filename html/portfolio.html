@@ -43,16 +43,36 @@
                 background-color: #f0f0f0;
             }
 
-            #projects {
+            #skills {
                 background-color: #e0e0e0;
             }
 
-            .project {
-                margin-bottom: 40px;
+            #skills .container {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
             }
 
-            .project h3 {
+            .skill {
+                margin-bottom: 40px;
+                width: 6%;
+            }
+            .skill img {
+                width: 100%;
+                filter: grayscale();
+                transition: 0.4s ease-in-out;
+            }
+            .skill img:hover {
+                filter: none;
+                transform: scale(1.05);
+            }
+
+            .skill h3 {
                 color: #1a1a1a;
+            }
+
+            .skill h2 {
+                font-size: 1rem;
             }
 
             footer {
@@ -61,13 +81,41 @@
                 text-align: center;
                 padding: 20px 0;
             }
+
+            * {
+                font-family: system-ui;
+            }
+            #education {
+                background-color: #e0e0e0;
+            }
+            table {
+                border-collapse: collapse;
+                border: 1px solid #000;
+                width: 60%;
+                margin: auto;
+            }
+
+            th,
+            td {
+                padding: 5px 10px;
+                border: 1px solid #000;
+            }
+
+            tbody tr {
+                transition: 0.2s ease-in-out;
+                cursor: pointer;
+            }
+
+            tbody tr:hover {
+                background-color: #eee;
+            }
         </style>
     </head>
     <body>
         <header>
             <div class="container">
-                <h1>Your Name</h1>
-                <p>Web Developer</p>
+                <h1>Jithendra Bathala</h1>
+                <p>Full Stack Web Developer</p>
             </div>
         </header>
 
@@ -75,34 +123,131 @@
             <div class="container">
                 <h2>About Me</h2>
                 <p>
-                    Welcome to my portfolio! I am a passionate web developer
-                    with expertise in front-end and back-end technologies.
+                    🚀Passionate Full-Stack Developer | Enthusiastic CS Student
+                    @ ITM Skills University
                 </p>
             </div>
         </section>
 
-        <section id="projects">
+        <section id="skills">
+            <h1 style="font-size: 2rem" align="center">Skills</h1>
             <div class="container">
-                <h2>Projects</h2>
-                <div class="project">
-                    <h3>Project 1</h3>
-                    <p>Description of Project 1.</p>
+                <div class="skill">
+                    <h2 style="text-align: center">HTML</h2>
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
+                        alt="html logo"
+                        width="200"
+                    />
                 </div>
-                <div class="project">
-                    <h3>Project 2</h3>
-                    <p>Description of Project 2.</p>
+                <div class="skill">
+                    <h2 style="text-align: center">CSS</h2>
+                    <img src="./images/css-3.png" alt="html logo" width="200" />
                 </div>
-                <!-- Add more projects as needed -->
+                <div class="skill">
+                    <h2 style="text-align: center">JS</h2>
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"
+                        alt="html logo"
+                        width="200"
+                    />
+                </div>
+                <div class="skill">
+                    <h2 style="text-align: center">React</h2>
+                    <img
+                        src="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
+                        alt="html logo"
+                        width="200"
+                    />
+                </div>
+                <div class="skill">
+                    <h2 style="text-align: center">Node</h2>
+                    <img
+                        src="https://w7.pngwing.com/pngs/452/24/png-transparent-js-logo-node-logos-and-brands-icon-thumbnail.png"
+                        alt="html logo"
+                        width="200"
+                    />
+                </div>
+                <div class="skill">
+                    <h2 style="text-align: center">MongoDB</h2>
+                    <img
+                        src="https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png"
+                        alt="html logo"
+                        width="200"
+                    />
+                </div>
             </div>
         </section>
 
         <section id="contact">
             <div class="container">
                 <h2>Contact Me</h2>
-                <p>Email: your.email@example.com</p>
-                <p>LinkedIn: linkedin.com/in/yourname</p>
-                <p>GitHub: github.com/yourusername</p>
+                <ul>
+                    <li>
+                        <a href="mailto:jithendrabathala@gmail.com"
+                            >Email: Jithendrabathala@gmail.com</a
+                        >
+                    </li>
+                    <li>
+                        <a href="tel:+91 9052046768">Mobile: +91 9052046768</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/jithendra-bathala/"
+                            target="_blank"
+                            >LinkedIn: Jithendra-Bathala</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/Jithendra-Bathala236"
+                            target="_blank"
+                            >GitHub: github.com/yourusername</a
+                        >
+                    </li>
+                </ul>
             </div>
+        </section>
+
+        <section id="education">
+            <h1 align="center">Education Detailes</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">Education Detailes</th>
+                    </tr>
+                    <tr>
+                        <th>Sr no.</th>
+                        <th>University/Board</th>
+                        <th>Years of passing</th>
+                        <th>Marks(in &percnt;)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>SSC</td>
+                        <td>2021</td>
+                        <td>81.166%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>HSC</td>
+                        <td>2023</td>
+                        <td>68.5%</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">3</td>
+                        <td rowspan="2">ISU</td>
+                        <td>Sem I</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Sem II</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <footer>
